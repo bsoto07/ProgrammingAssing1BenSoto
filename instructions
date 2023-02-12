@@ -1,0 +1,164 @@
+Overview
+This assignment is, to a degree, an extension of the lab work in that you are asked
+to write a set of functions to gain greater famililarity with solving problems from a
+computational perspective and with expressing solutions to such problems in Python.
+
+Note: Though each part asks that you "write a function", you
+are always allowed to write additional helper/utility functions
+to simplify the implementation of the required function.
+This is good design in general and will often lead to a simpler solution.
+
+
+
+Course Learning Objectives
+This assignment addresses the following course learning objectives.
+
+Direct
+
+Demonstrate the basic principles of algorithmic problem solving and problem decomposition.
+
+Create a set of unit tests to verify the expected behavior of a function.
+
+Indirect
+
+Using the syntax, and with an introductory understanding of the
+semantics, of a programming language, create a solution to a
+problem as a fully functioning and well-tested program.
+
+Operate in a networked computing environment.
+
+
+
+Logistics
+The functions that you develop in response to each part must be written
+in the hw1.py file with the tests in the hw1_tests.py file.
+Each function must include, as a comment, a short description of the
+function's purpose including the function's input and output, and the function must
+include type annotations for the parameters and the function return type.
+For each function that you write, you must include at least two unit tests
+(as separate test functions in the hw1_tests.py testing file) to demonstrate that
+the function works properly.
+
+
+Design Recipe
+For each of the following tasks, be sure to follow the design recipe when developing the function.
+
+Briefly state the purpose of the function, including input and output.
+Identify the representation of the data to be used in the computation.
+Name and template the function.
+Do computation by hand and write tests.
+Complete the function implementation.
+
+
+Parts
+There are eight different parts to this assignment. Each requests that you implement
+a single function but, again, in some cases you will likely want to develop an
+additional utility/"helper" function to ease the implementation of the primary function.
+
+You should follow the Design Recipe and write tests to verify your understanding of
+the task before writing the code. In addition, you should develop and test each of
+part before moving on to the next.
+
+
+
+Part 1
+vowel_count
+
+Define a function named vowel_count with one parameter of type str (a string).
+This function must compute and return the count of the number of vowels that appear in
+the input string. For the purposes of this problem, you are only asked to consider the
+standard five vowels in English (though the function should count both lowercase and
+uppercase vowels).
+
+
+
+Part 2
+short_lists
+
+Define a function named short_lists that takes one parameter of type list[list[int]].
+This function must return a new list consisting of those elements of the input list
+(in the same order) that are of length 2.
+
+
+
+Part 3
+ascending_pairs
+
+Define a function named ascending_pairs that takes one parameter of type
+list[list[int]]. This function must return a new list with elements (the nested lists)
+matching those of the input list (in the same order) but such that any nested list of
+length 2 in the result has its elements in ascending order (really, non-descending; i.e.,
+the first element will be less than or equal to the second). The elements of nested
+lists of length not equal to 2 must remain in the same order as in the input.
+
+
+
+Part 4
+add_prices
+
+Define a function named add_prices with two parameters each of type Price
+(defined in the provided files). This function must compute and return the sum
+of the input prices as a new Price object but initalized such that the number of
+cents is not above 99. There are multiple valid approaches to the implementation of this
+function including with or without the use of a conditional statement.
+
+
+
+Part 5
+rectangle_area
+
+Define a function named rectangle_area with one parameter of type Rectangle
+(defined in the provided files). This function must compute and return the area of the
+provided rectangle with the assumption that the rectangle is properly axis-aligned
+(i.e., the top-left corner is above and to the left of the bottom-right corner, the
+vertical sides of the rectangle are parallel to the y-axis, and the horizontal sides
+of the rectangle are parallel to the x-axis).
+
+
+
+Part 6
+books_by_author
+
+Define a function named books_by_author with two parameters; the first is of type
+str denoting an intended author name and the second is of type list[Book] (Book is
+defined in the provided files). This function must return a list of all books (of
+type list[Book]) in the input list written by the author specified in the first parameter.
+
+This function might be used to find books by a favorite or a recommended author.
+
+
+
+Part 7
+circle_bound
+
+Define a function named circle_bound with one parameter of type Rectangle. This
+function must return a Circle (defined in the provided files) object that represents a
+"bounding circle" for the provided rectangle. Such a bounding circle should be the smallest
+circle that encloses the rectangle; the circle should be centered at the center of the
+rectangle with radius equal to the distance from the center to one of the corner points.
+
+Such bounding circles (or bounding shapes in general, and typically in three-dimensions)
+are used to reduce the computational cost required to check for potential collisions in 3d
+environments including use in robot route planning and navigation for automated vehicles.
+
+
+
+Part 8
+below_pay_average
+
+Define a function named below_pay_average with one parameter of type list[Employee]
+(Employee is defined in the provided files). This function must return a list
+(of type List[str]) of the names of employees that are being paid less than the average
+pay of all employees in the list. The implementation of this function will require computing
+the average employee pay rate. Your function should work properly when the input list is empty.
+
+This function might be used to identify those employees whose pay may be artificially
+lower than their coworkers.
+
+
+
+
+
+Submitting
+Commit and push your code to your repository. You should be pushing to your repository frequently, so this step will become automatic.
+
